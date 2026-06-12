@@ -45,7 +45,7 @@ function soune_scripts() {
   wp_deregister_script('jquery'); // WordPressで用意されているjQueryを読み込まない記述
   wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0');
   wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js', array(), '8.0.0', true);
-  wp_enqueue_script( 'soune-js', get_template_directory_uri() . '/js/main.js', array(), '1.1.1', true );
+  wp_enqueue_script( 'soune-js', get_template_directory_uri() . '/js/main.js', array(), filemtime( get_template_directory() . '/js/main.js' ), true );
 }
 
 // Contact Form 7の自動pタグ無効

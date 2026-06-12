@@ -45,7 +45,7 @@
 }
 
 .p-home-service-slide-item__text {
-  font-size: 0.9rem;
+  font-size: 14px;
   line-height: 1.6;
   height: 90px; /* テキストエリアを固定高 */
   overflow: hidden;

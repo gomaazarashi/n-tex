@@ -135,7 +135,7 @@
           </a>
         </li>
                 <li class="p-business-intro-item p-business-intro-item--rental">
-          <a href="#ilrental">
+          <a href="#repair">
             <div class="p-business-intro-item__img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/business/intro_img06.png" alt="リペア工房">
             </div>
@@ -408,7 +408,7 @@
     </div><!-- /.p-business-block__inner -->
   </section><!-- /.p-business-ilrental -->
 
-  <section class="p-business-block p-business-tavishot">
+  <section id="repair" class="p-business-block p-business-tavishot">
     <div class="p-business-block__inner p-business-tavishot__inner l-inner">
       <div class="p-business-tavishot__logos">
         <div class="p-business-block__logo p-business-tavishot__logo">
