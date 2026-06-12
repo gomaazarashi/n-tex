@@ -1,0 +1,125 @@
+
+<footer id="footer" class="l-footer">
+  <div class="l-footer-top">
+    <div class="l-footer-top__inner">
+      <div class="l-footer-iso">
+        <div class="l-footer-iso__privacy"> <a href="https://privacymark.jp/" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/iso_01.png" alt="プライバシー"></a> </div>
+        <div class="l-footer-iso__bsi"> <img src="<?php echo get_template_directory_uri(); ?>/img/iso_02.png" alt="bsi"> </div>
+        <p class="l-footer-iso__text">ISO認証取得（本社）<br>
+          FM516705/ISO(JISQ)9001<br>
+          EMS93525/ISO(JISQ)14001</p>
+      </div>
+      <!-- /.l-footer-iso -->
+      <p class="l-footer-deal">古物商許可証番号 471063000162</p>
+      <div class="l-footer-erumin"> <img src="<?php echo get_template_directory_uri(); ?>/img/erumin_logo.png" alt="えるみん"> </div>
+      <!-- /.l-footer-erumin -->
+      <div class="l-footer-info">
+        <p class="l-footer-info__name u-ja">株式会社エヌテックス</p>
+        <p class="l-footer-info__name u-en">NTex Corporation</p>
+        <p class="l-footer-info__address u-ja">〒400-0502　<span>山梨県南巨摩郡富士川町最勝寺1369-1</span></p>
+        <p class="l-footer-info__address u-en">1369-1 Saishoji Fujikawa-cho Minamikoma-Gun Yamanashi <span>〒400-0502 Japan</span></p>
+      </div>
+      <!-- /.l-footer-info --> 
+    </div>
+    <!-- /.l-footer-top__inner --> 
+  </div>
+  <!-- /.l-footer-top -->
+  <div class="l-footer-mid">
+    <div class="l-footer-mid__inner">
+      <div class="l-footer-mid__top">
+        <div class="l-footer-mid__msc l-footer-mid__item"> <a href="https://www.mediasell.co.jp/" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/msc_logo.png" alt="Media Sell Corporation"> </a> </div>
+        <div class="l-footer-mid__ecorica l-footer-mid__item"> <a href="https://www.ecorica.jp/" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/ecorica_logo02.png" alt="エコリカ"> </a> </div>
+      </div>
+      <!-- /. l-footer-mid__top -->
+      <div class="l-footer-mid__bottom">
+        <div class="l-footer-mid__plaisir l-footer-mid__item"> <a href="https://www.e-plaisir.co.jp/" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/plaisir_logo.png" alt="プレジール"> </a> </div>
+        <div class="l-footer-mid__miraisell l-footer-mid__item"> <a href="https://miraisell.com/" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/miraisell_logo.png" alt="miraisell"> </a> </div>
+      </div>
+      <!-- /.l-footer-mid__bottom --> 
+    </div>
+    <!-- /.l-footer-mid__inner --> 
+  </div>
+  <!-- /.l-footer-mid -->
+  <div class="l-footer-bottom">
+    <div class="l-footer-bottom__inner">
+      <div class="l-footer-contact">
+        <ul class="l-footer-contact__list">
+          <li class="l-footer-contact__item"> <a href="tel:0566-22-6511">
+            <div class="l-footer-contact__left">
+              <div class="l-footer-contact__img tel"> <img src="<?php echo get_template_directory_uri(); ?>/img/icon_tel.svg" alt="tel"> </div>
+              <p class="l-footer-contact__kind u-pc">TEL</p>
+            </div>
+            <!-- /.l-footer-contact__left -->
+            <div class="l-footer-contact__right">
+              <p class="l-footer-contact__kind u-sp">TEL</p>
+              <p class="l-footer-contact__text u-ja">0556-22-6511</p>
+              <p class="l-footer-contact__text u-en">+81-556-22-6511</p>
+            </div>
+            <!-- /.l-footer-contact__right --> 
+            </a> </li>
+          <!-- /.l-footer-contact__item -->
+          <li class="l-footer-contact__item">
+            <div class="l-footer-contact__left">
+              <div class="l-footer-contact__img fax"> <img src="<?php echo get_template_directory_uri(); ?>/img/icon_fax.svg" alt="fax"> </div>
+              <p class="l-footer-contact__kind u-pc">FAX</p>
+            </div>
+            <!-- /.l-footer-contact__left -->
+            <div class="l-footer-contact__right">
+              <p class="l-footer-contact__kind u-sp">FAX</p>
+              <p class="l-footer-contact__text u-ja">0556-22-6516</p>
+              <p class="l-footer-contact__text u-en">+81-556-22-6516</p>
+            </div>
+            <!-- /.l-footer-contact__right --> 
+          </li>
+          <!-- /.l-footer-contact__item -->
+          <li class="l-footer-contact__item"> <a href="<?php echo esc_url(home_url('/contact/')); ?>">
+            <div class="l-footer-contact__left">
+              <div class="l-footer-contact__img mail"> <img src="<?php echo get_template_directory_uri(); ?>/img/icon_mail.svg" alt="mail"> </div>
+              <p class="l-footer-contact__kind u-pc">MAIL</p>
+            </div>
+            <!-- /.l-footer-contact__left -->
+            <div class="l-footer-contact__right">
+              <p class="l-footer-contact__kind u-sp">MAIL</p>
+              <p class="l-footer-contact__text mail">CONTACT</p>
+            </div>
+            <!-- /.l-footer-contact__right --> 
+            </a> </li>
+          <!-- /.l-footer-contact__item -->
+        </ul>
+        <p class="l-footer-contact__desc">お問い合わせはフォーム、またはお電話・FAXにてお受けしております。<br class="u-pc">
+          受付時間：9時〜17時（土・日・祝は除く）</p>
+      </div>
+      <!-- /.l-footer-contact -->
+      <div class="l-footer__menu u-lt-m">
+        <?php
+        wp_nav_menu( array(
+            'theme_location' => 'footer-menu',
+            'container' => 'nav',
+            'container_class' => 'l-footer__nav',
+            'menu_class' => 'l-footer__list',
+        ) );
+        ?>
+        <div class="l-footer__recruit"> <a href="<?php echo esc_url(home_url('/recruit/')); ?>"><span>採用情報</span></a> </div>
+        <!-- /.l-footer__recruit --> 
+      </div>
+      <!-- /.l-footer__menu --> 
+      <!-- <ul class="l-footer__links u-pc">
+          <li>
+            <a href="" target="_blank"><span>株式会社エコリカ</span></a>
+          </li>
+          <li>
+            <a href="" target="_blank"><span>株式会社エム・エス・シー</span></a>
+          </li>
+          <li>
+            <a href="" target="_blank"><span>株式会社プレジール</span></a>
+          </li>
+        </ul> -->
+      <p class="l-footer__copy">Copyright © NTex Corporation. All Rights Reserved</p>
+    </div>
+    <!-- /.l-footer-bottom__inner --> 
+  </div>
+  <!-- /.l-footer-bottom --> 
+</footer>
+<!-- /.l-footer -->
+<?php wp_footer(); ?>
+</body></html>

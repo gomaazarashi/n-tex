@@ -1,0 +1,133 @@
+/* サービスカード高さ調整 */
+.p-home-service-slide-item {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.p-home-service-slide-item__img {
+  flex-shrink: 0 !important;
+}
+
+.p-home-service-slide-item__meta {
+  flex-shrink: 0 !important;
+}
+
+.p-home-service-slide-item__text {
+  flex-grow: 1 !important;
+}
+
+/* サービスカード画像の統一化 */
+.p-home-service-slide-item__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4/3; /* 縦横比を統一 */
+  object-fit: cover;
+}
+
+.p-home-service-slide-item__meta {
+  height: 120px; /* タイトルエリアを固定高 */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.p-home-service-slide-item__meta h3 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 最大2行で統一 */
+  -webkit-box-orient: vertical;
+  margin: 0;
+}
+
+.p-home-service-slide-item__text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  height: 90px; /* テキストエリアを固定高 */
+  overflow: hidden;
+}
+
+/* ============================================
+   カスタマーサポート代行 & リペア工房セクション
+   ロゴ横並び＋色付き円
+   ============================================ */
+
+/* ロゴ群を横並び・8pxギャップで配置 */
+.p-business-ilrental__logos,
+.p-business-tavishot__logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ラッパー内のロゴはmargin: 0 autoを打ち消す */
+.p-business-ilrental__logos .p-business-block__logo,
+.p-business-tavishot__logos .p-business-block__logo {
+  margin: 0 !important;
+}
+
+/* リペア工房ロゴはカスタマーサポート代行と同じサイズ・形（白丸） */
+.p-business-tavishot .p-business-tavishot__logo {
+  display: flex !important;
+  width: 15rem !important;
+  height: 15rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  box-sizing: border-box !important;
+}
+.p-business-tavishot .p-business-tavishot__logo img {
+  width: 7rem !important;
+  height: auto !important;
+}
+@media screen and (max-width: 1279px) {
+  .p-business-tavishot .p-business-tavishot__logo {
+    width: 20rem !important;
+    height: 20rem !important;
+  }
+  .p-business-tavishot .p-business-tavishot__logo img {
+    width: 12rem !important;
+  }
+}
+
+/* SwissMilitary（白丸）は背景が白いページに溶けないよう黒縁を付ける。
+   --mgaming, --deli にはこのルールは当たらない */
+.p-business-tavishot .p-business-tavishot__logo:not(.p-business-tavishot__logo--mgaming):not(.p-business-tavishot__logo--deli) {
+  border: 1px solid #000 !important;
+}
+
+/* 修飾クラス（M-GAMING=黒 / DELI=赤）：必ず最後に置いてベース白を上書き */
+.p-business-ilrental__logo--mgaming,
+.p-business-tavishot .p-business-tavishot__logo--mgaming {
+  background-color: #000000 !important;
+}
+.p-business-ilrental__logo--deli,
+.p-business-tavishot .p-business-tavishot__logo--deli {
+  background-color: #cb0a3d !important;
+}
+
+/* ============================================
+   基盤となる事業セクション：3+2レイアウト
+   ============================================ */
+@media screen and (min-width: 1280px) {
+  .p-business-intro-item {
+    /* 3カラム：1段目3アイテム、2段目2アイテム
+       gap 2rem × 2箇所 = 4rem を3アイテムで分担 */
+    width: calc((100% - 4rem) / 3) !important;
+  }
+}
+
+/* ============================================
+   イントロカード内のロゴ間隔を8pxに統一
+   （カスタマーサポート・リペア工房のロゴ3つに効く）
+   ============================================ */
+.p-business-intro-item__logos {
+  gap: 8px !important;
+}
