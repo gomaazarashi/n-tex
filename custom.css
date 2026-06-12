@@ -29,8 +29,17 @@
 .p-home-service-slide-item__meta {
   height: 120px; /* タイトルエリアを固定高 */
   display: flex;
+  flex-direction: column; /* ロゴ群を上・タイトルを下に縦並び（長いタイトルの折返し崩れ対策） */
+  justify-content: center;
   align-items: center;
+  gap: 6px;
   padding: 10px;
+}
+
+/* 縦並び時、タイトル/サブをカード全幅で中央寄せ（ロゴ横の狭い枠に押し込めない） */
+.p-home-service-slide-item__titles {
+  width: 100%;
+  text-align: center;
 }
 
 .p-home-service-slide-item__meta h3 {
